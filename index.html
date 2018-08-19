@@ -1,0 +1,120 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>PORTFOLIO</title>
+	<style> 
+body {
+    background: url(E:\portfolio website\abstract1.jpg);   
+}
+.shubho{
+	width: 35%;
+	border: 50px;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	align-items: center;
+    display: none;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.work{
+	align-items: center;
+	list-style: none;
+}
+
+
+   </style>
+	</head>
+	<body  >
+	<img class="Shubho" src="E:\portfolio website\back.jpg" align="left">
+		<h2>HELLO !</h2>
+<p>SHUVAMOY CHATTERJEE</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'HOME')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'ABOUT')">ABOUT</button>
+  <button class="tablinks" onclick="openCity(event, 'CONTACT')">CONTACT</button>
+</div>
+
+<div id="HOME" class="tabcontent">
+<h3>Home</h3>
+ <p>
+ 	<br>Hey ! I kindly welcome you to my Website designed by me as a part of a project because of E-Cell.</p>
+</div>
+
+<div id="ABOUT" class="tabcontent">
+<h3>Resume</h3>
+ <p><a href="E:\portfolio website\Resume.html">Click Here to view my Resume</a>
+ 	
+ </p> 
+</div>
+
+<div id="CONTACT" class="tabcontent">
+ <p ><br>Feel free to Contact me
+ <ul class="work">My Contacts details are :
+	<li>Phone No : 6290499945</li>
+	<li>Email-Id - suvo1050.sc@gmail.com</li>
+	
+</ul>
+
+
+ </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<div class="footer">
+  <p>Designed by Shubho :)</p>
+</div>
+
+
+	</body>
+
+
+
+
+</html>
